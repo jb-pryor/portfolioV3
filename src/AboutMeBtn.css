@@ -1,0 +1,11 @@
+.box1 {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  position: sticky;
+  left: 0px;
+}
+
+* {
+  margin: 0;
+}

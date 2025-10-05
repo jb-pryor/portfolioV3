@@ -5,8 +5,8 @@ function AboutMeBtn() {
 
   return (
     <>
-      <div className="box1">
-
+      <div className="btnbox">
+        <img src='/src/assets/7A6A1293.jpg' className='cirImg'/>
       </div>
     
     </>

@@ -1,11 +1,117 @@
+/*This is sidebar.css*/
+body { 
+  background-color: rgb(250, 250, 250);
+}
+
 .box {
   width: 800px;
-  background-color: pink;
-  height: 100vh;
+  background-color: white;
+  height: 2200px;
   position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.imgWrap {
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;
+}
+
+.circleImg {
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border: solid 2px black;
+}
+
+.borderImg {
+  background-image: url('/src/assets/IMG_27232.jpeg');
+  width: 100%;
+  height: 80px;
+  background-size: contain;    /* zooms out or in to cover the area */
+  background-position: top center; /* align top center */
+  margin-top: -10px;
+  object-fit: fill;  /* stretches to fill width and height */
+  
+}
+
+.sec1 h1 {
+  margin-top: 10px;
+  background-color: white;
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
 }
 
 *  {
   margin: 0;
 
+}
+
+.sec1 h2 {
+
+  margin-top: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.sec1 h3 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 60px;
+  font-weight: 500;
+}
+
+.sec2 h2 {
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 60px;
+  font-weight: 300;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  justify-content: center;
+  
+}
+
+.proj {
+  margin-top: 65px;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.proj:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.spacing  {
+  height: 45px;
+}
+
+.sec3 h2 {
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  margin-top: 50px;
 }

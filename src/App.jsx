@@ -11,8 +11,8 @@ function App() {
 
   return (
     <>
-      <AboutMeBtn></AboutMeBtn>
       <SideBar></SideBar>
+      <AboutMeBtn className="btnbox"></AboutMeBtn>
     </>
   )
 }

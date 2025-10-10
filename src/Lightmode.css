@@ -1,0 +1,39 @@
+label {
+  position: absolute;
+  background-color: rgb(220, 220, 220);
+  width: 70px;
+  height: 35px;
+  right: 25px;
+  top: 20px;
+  border-radius: 200px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+label:after {
+  content: "";
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-color: white;
+  border-radius: 180px;
+  transition: 0.3s;
+}
+
+input {
+  visibility: hidden;
+}
+input:checked + label {
+  background-color: rgb(56, 56, 56);
+}
+input:checked + label:after {
+
+  left: 67px;
+  transform: translateX(-100%);
+  background-color: black;
+}
+label:active:after {
+  width: 40px;
+}

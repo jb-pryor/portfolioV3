@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  margin-top: 10px;
+  background-color: white;
+  width: 300px;
+  height: 30px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 200;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: 10px;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 20px;
+  position: fixed;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.header.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.header.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.nav-text {
+  color: black;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.nav-text span {
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-text span:hover {
+  color: #ff5252;
+  transform: scale(1.1);
+}

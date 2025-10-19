@@ -1,17 +1,15 @@
 /*This is sidebar.css*/
-body { 
-  background-color: rgb(250, 250, 250);
-}
 
 .box {
   margin-top: 75px;
   width: 800px;
   background-color: white;
-  height: 2400px;
+  height: 2700px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 
 }
 
@@ -36,7 +34,7 @@ body {
 .borderImg {
   background-image: url('/src/assets/IMG_27232.jpeg');
   width: 100%;
-  height: 80px;
+  height: 70px;
   background-size: contain;    /* zooms out or in to cover the area */
   background-position: top center; /* align top center */
   margin-top: -10px;
@@ -44,9 +42,20 @@ body {
   
 }
 
+.borderDiv {
+  background-color: rgb(243, 243, 243);
+  width: 100%;
+  height: 15px;
+  margin-top: 0;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .borderDiv {
+  background-color: rgb(36, 36, 36);
+}
+
 .sec1 h1 {
   margin-top: 30px;
-  background-color: white;
   text-align: center;
   font-size: 120px;
   font-family: 'Montserrat', sans-serif;
@@ -85,8 +94,18 @@ body {
 }
 
 .projInfo{
-  font-size: 17px;
-  margin-bottom: 25px;
+  font-size: 22px;
+  margin-bottom: 20px;
+  width: 380px;
+  color: rgb(108, 108, 108);
+}
+
+.projPic {
+
+  width: 280px;
+  height: 180px;
+  transform: translateY(-20px);
+
 }
 
 .sec2 a {
@@ -96,21 +115,38 @@ body {
 .row {
   display: flex;
   flex-direction: row;
-  gap: 150px;
+  gap: 50px;
   justify-content: center;
   
 }
 
 .proj {
-  margin-top: 65px;
-  background-color: white;
-  width: 200px;
+  background-color: rgb(240, 240, 240);
+  margin-top: 55px;
+  margin-left: 25px;
+  width: 730px;
   height: 200px;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   font-family: 'Montserrat', sans-serif;
-  padding: 20px;
-  border-radius: 15%;
+  padding: 10px;
+  padding-top: 30px;
+  border-radius: 20px;
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+}
+
+.rowL {
+  flex: 1;
+}
+
+.rowR {
+  flex: 1;
+}
+
+.dark-mode .proj {
+  background-color: rgb(21, 21, 21);
 }
 
 .proj:hover {
@@ -130,10 +166,9 @@ body {
 }
 
 .title {
-  font-size: 25px;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 10px;
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 
 .sec3 p {
@@ -159,8 +194,136 @@ body {
   bottom: 10px;
   right: 35%;
   position: absolute;
+  color: rgb(104, 104, 104);
 }
 
+.dark-mode .trademark {
+  color: rgb(107, 107, 107);
+}
 .skills {
   margin-bottom: 50px;
 }
+
+
+.dark-mode .box {
+
+  background-color: rgb(30, 30, 30);
+  color: rgb(221, 221, 221);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.dark-mode a {
+  color: aqua;
+}
+
+.dark-mode .proj:hover {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+
+.skills-wrapper {
+  /*overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;*/
+}
+
+.skills {
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.skills li {
+  white-space: nowrap; 
+  position: absolute;
+  list-style: none;
+  /*padding-left: 100%;*/
+  animation: scroll 7s linear infinite;
+}
+
+.skills:hover li {
+
+  animation: paused;
+}
+
+/*@keyframes scroll {
+  from {
+    transform: translateX(600px);
+  }
+  to {
+    transform: translateX(-100px);
+  }
+}*/
+
+.skills li:nth-child(1) { animation-delay: 0ms; }
+.skills li:nth-child(2) { animation-delay: 1s; }
+.skills li:nth-child(3) { animation-delay: 2s; }
+.skills li:nth-child(4) { animation-delay: 3s; }
+.skills li:nth-child(5) { animation-delay: 4s; }
+.skills li:nth-child(6) { animation-delay: 5s; }
+.skills li:nth-child(7) { animation-delay: 6s; }
+
+@keyframes scroll {
+  from {
+    transform: translateX(47vw);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-2vw);
+    opacity: 0;
+  }
+}
+
+@keyframes jitter {
+  0%, 100% { transform: translateY(0); scale: 0;}
+  10% { scale: 1;}
+  50% { transform: translateY(30px)
+    scale(1.2); }
+  95% { transform: translateY(0px); scale: 1;}
+}
+
+.secTitle {
+  transition: all 0.3s ease;
+}
+
+.secTitle:hover {
+
+  letter-spacing: 3px;
+}
+
+.jitter-text {
+  animation: jitter 2.0s ease 500ms;
+  scale: 0;
+}
+
+
+/*.jitter-text:hover {
+  animation-play-state: paused;
+}*/
+
+
+.sec4 h2 {
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  margin-top: 30px;
+}
+
+.tools {
+  list-style: none;
+  padding: 0;              /* removes default padding */
+  margin: 0; 
+  display: flex;           /* makes items sit in one row */
+  gap: 5px;              /* optional: remove default margin */
+}
+
+
+/*animation: jitter 1.5s ease 5s infinite;*/

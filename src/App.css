@@ -1,9 +1,15 @@
 /* this is app.css*/
 body {
   height: 2900;
+  transition: all 0.3s ease;
 }
 
 .emptySpace {
 
   height: 150px;
 }
+
+.dark-mode {
+  background-color: rgb(0, 0, 0);
+}
+

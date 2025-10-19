@@ -1,8 +1,9 @@
+
 .header {
   display: flex;
   margin-top: 10px;
   background-color: white;
-  width: 300px;
+  width: 420px;
   height: 30px;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -19,17 +20,7 @@
   margin-top: 10px;
   border-radius: 20px;
   position: fixed;
-  transition: transform 0.4s ease, opacity 0.3s ease;
-}
-
-.header.hidden {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-
-.header.visible {
-  transform: translateY(0);
-  opacity: 1;
+  transition: all 0.3s ease;
 }
 
 .nav-text {
@@ -40,10 +31,20 @@
 
 .nav-text span {
   cursor: pointer;
-  transition: color 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-text span:hover {
-  color: #ff5252;
+  color: #bcbcbc;
   transform: scale(1.1);
+}
+
+.dark-mode .header {
+
+  background-color: rgb(30, 30, 30);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.dark-mode .nav-text {
+  color: white;
 }

@@ -1,0 +1,11 @@
+
+.img1 {
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  background-color: blue;
+  margin: 0;
+  left: 1150px;
+  top: 1600px;
+  z-index: -10;
+}

@@ -1,5 +1,5 @@
 label {
-  position: absolute;
+  position: fixed;
   background-color: rgb(220, 220, 220);
   width: 70px;
   height: 35px;

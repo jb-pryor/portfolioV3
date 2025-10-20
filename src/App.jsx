@@ -16,8 +16,8 @@ function App() {
     <>
       <Header></Header>
       <Lightmode></Lightmode>
-      <SideBar></SideBar>
       <AboutMeBtn></AboutMeBtn>
+      <SideBar></SideBar>
       <SidePics></SidePics>
       <div className='emptySpace'></div>
     </>

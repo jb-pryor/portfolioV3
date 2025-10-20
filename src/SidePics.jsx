@@ -6,6 +6,7 @@ function SidePics () {
   return (
     <>
       <div className="img1"></div>
+      <div className="img2"></div>
     </>
   )
 }

@@ -100,8 +100,20 @@ function SideBar() {
         </div>
         <div className='borderDiv' id='contact'></div>
         <div className='sec4'>
-          <h2 className='secTitle'>Contact Me</h2>
+          <form action="" className="contact-left">
+            <h2 className='secTitle'>Contact Me</h2>
+            <div className='contactTitle'>
+              <h3>Send me a message!</h3>
+              <hr />
+            </div>
+            <input type='text' name='name' placeholder='Your Name' className='contact-inputs' id='nameInput' required/>
+            <input type="email" name='email' placeholder='Your Email' className='contact-inputs' id='emailInput' required/>
+            <textarea name="message" className='contact-inputs' placeholder='Your Message' id='messageInp' required></textarea>
+            <button type='submit' className='contact-inputs'>Submit</button>
+          </form>
+          <div className="contact-right"></div>
         </div>
+        <hr className='spacingBetween'/>
         <div className='trademark'>© 2025 James Pryor. All rights reserved.</div>
       </div>
     

@@ -32,18 +32,22 @@
   width: 289px;
   height: 325px;
   background-color: white;
-  position: fixed;
+  /*position: fixed;
   top: 30%;
-  transform: translateY(-50%);
+  transform: translateY(-50%);*/
   font-family: 'Montserrat', sans-serif;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  margin-left: 15px;
+  /*margin-left: 15px;*/
   text-align: center;
-  
+
+  position: absolute;
+  left: 55%;
+  top: 2315px;
   
   opacity: 1;
   transform: scale(0.95);
   transition: all 0.3s ease;
+  z-index: 2;
 }
 
 .popup[style*="display: block"],

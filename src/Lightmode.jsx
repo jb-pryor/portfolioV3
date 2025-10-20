@@ -20,7 +20,7 @@ function Lightmode() {
   return (
     <>
       <input type='checkbox' id='darkmode-toggle' checked={darkMode} onChange={() => setDarkMode(!darkMode)}></input>
-      <label for="darkmode-toggle"></label>
+      <label htmlFor="darkmode-toggle"></label>
     </>
   );
 }

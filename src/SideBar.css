@@ -327,3 +327,33 @@
 
 
 /*animation: jitter 1.5s ease 5s infinite;*/
+
+.contact-inputs {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+  margin-left: 25px;
+}
+
+#nameInput {
+  margin-top: 10px;
+  width: 200px;
+
+}
+
+#emailInput {
+  width: 200px;
+  margin-top: 10px;
+}
+
+#messageInp {
+  width: 400px;
+  height: 150px;
+  margin-top: 10px;
+}
+
+.spacingBetween {
+  margin-top: 100px;
+}

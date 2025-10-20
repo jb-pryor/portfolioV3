@@ -22,7 +22,7 @@ label:after {
   transition: 0.3s;
 }
 
-input {
+#darkmode-toggle {
   visibility: hidden;
 }
 input:checked + label {

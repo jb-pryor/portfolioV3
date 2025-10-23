@@ -42,7 +42,7 @@
 
   position: absolute;
   left: 55%;
-  top: 2315px;
+  top: 2675px;
   
   opacity: 1;
   transform: scale(0.95);
@@ -87,13 +87,19 @@
   border: solid 3px black;
 }*/
 
-i {
+
+.popup a {
+  text-decoration: none;
+  color: black;
+}
+.popup i {
+  color: black;
+  transition: all ease 0.3s;
   cursor: pointer;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+.dark-mode .popup i {
+  color: rgb(227, 227, 227);
 }
 
 .resume {

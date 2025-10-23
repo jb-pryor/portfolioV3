@@ -11,7 +11,7 @@ function AboutMeBtn() {
   const exit = document.getElementById("exit");
 
   
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const openPopup = () => setIsOpen(true);
   const closePopup = () => setIsOpen(false);
@@ -25,7 +25,7 @@ function AboutMeBtn() {
     )}
     {isOpen && (
       <div className='popup' id='popup'>
-        <button onClick={closePopup}>X</button>
+        {/*<button onClick={closePopup}>X</button>*/}
         <h2>Contact Card</h2>
         <img src='/src/assets/7A6A1293.jpg' className='bigCircImg'/>
         <h3>James (JB) Pryor</h3>

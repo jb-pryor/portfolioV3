@@ -21,6 +21,7 @@
   border-radius: 20px;
   position: fixed;
   transition: all 0.3s ease;
+  z-index: 2;
 }
 
 .nav-text {
@@ -43,6 +44,15 @@
 
   background-color: rgb(30, 30, 30);
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+
+.header.hidden {
+  transform: translateX(-50%) translateY(-100%);
+}
+
+.header.visible {
+  transform: translateX(-50%) translateY(0);
 }
 
 .dark-mode .nav-text {

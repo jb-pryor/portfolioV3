@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+
 import "./Header.css";
 
 function Header() {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+
 
   const controlHeader = () => {
     if (window.scrollY > lastScrollY) {
@@ -13,7 +15,7 @@ function Header() {
       // Scrolling up → show
       setShowHeader(true);
     }
-    setLastScrollY(window.scrollY);
+    lastScrollY.current = window.scrollY;
   };
 
   useEffect(() => {
@@ -21,7 +23,7 @@ function Header() {
     return () => {
       window.removeEventListener("scroll", controlHeader);
     };
-  }, [lastScrollY]);
+  }, []);
 
   const handleScroll = (id) => {
     const element = document.getElementById(id);

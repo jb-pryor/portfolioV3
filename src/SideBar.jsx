@@ -12,8 +12,9 @@ function SideBar() {
         <div className='sec1'>
           <div className='borderDiv' id='home'></div>
           <h1 className='jitter-text'>Hey there!</h1>
-          <h2>I'm James Pryor or JB</h2>
-          <h3>I'm a developer.</h3>
+          <h2 className='nameText'>I'm James Pryor or JB <span className='emoji-wave'>👋</span></h2>
+          <div className='locateText'><h2><i className='fa-solid fa-location-dot'></i>San Diego, CA</h2></div>
+          <h3 className='fullStack'>I'm a fullstack-developer.</h3>
           <div className='borderDiv' id='projects'></div>
         </div>
         <div className='sec2'>
@@ -75,7 +76,7 @@ function SideBar() {
         <div className='sec3'>
           <h2 className='secTitle'>About Me</h2>  
           <p>Junior Software Developer with a passion for building fullstack applications</p>
-          <p>Born in Northern California currently living in San Diego, I have always been the most competitve person</p>
+          <p>Born in Northern California currently a student living in San Diego, I have always been a very competitve person and have always pushed myself to be the best</p>
           <p>Eager to dive even deeper into fullstack applications, ai, gameDev, web3 Dapps, and other aspects of the forever growing tech industry<u>...read more about me</u></p>
           <h3 className='secTitle'>Skills</h3>
           <div className='skills-container'>     

@@ -11,7 +11,7 @@ function SideBar() {
       <div className="box">
         <div className='sec1'>
           <div className='borderDiv' id='home'></div>
-          <h1 className='jitter-text'>Hey there!</h1>
+          <div className='circFlipImg'></div>
           <h2 className='nameText'>I'm James Pryor or JB <span className='emoji-wave'>👋</span></h2>
           <div className='locateText'><h2><i className='fa-solid fa-location-dot'></i>San Diego, CA</h2></div>
           <h3 className='fullStack'>I'm a fullstack-developer.</h3>

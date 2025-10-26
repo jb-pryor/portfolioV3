@@ -35,7 +35,6 @@ function Header() {
   return (
     <div className={`header ${showHeader ? "visible" : "hidden"}`}>
       <p className="nav-text">
-        <span onClick={() => handleScroll("home")}>Home</span> •{" "}
         <span onClick={() => handleScroll("projects")}>Projects</span> •{" "}
         <span onClick={() => handleScroll("about")}>About</span> •{" "}
         <span onClick={() => handleScroll("contact")}>Contact</span>

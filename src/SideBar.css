@@ -259,41 +259,29 @@ i .dark-mode {
 }
 
 
-.skills-wrapper {
-  /*overflow: hidden;
-  white-space: nowrap;
-  box-sizing: border-box;*/
-}
 
 .skills {
 
-  position: relative;
   display: flex;
-  flex-direction: row;
-  animation-fill-mode: forwards;
 }
 
 .skills li {
-  white-space: nowrap; 
   position: absolute;
   list-style: none;
   /*padding-left: 100%;*/
   animation: scroll 7s linear infinite;
+  animation-fill-mode: forwards;
+  font-size: 20px;
+}
+
+.skills li i {
+  margin-right: 5px;
 }
 
 .skills:hover li {
 
-  animation: paused;
+  animation-play-state: paused;
 }
-
-/*@keyframes scroll {
-  from {
-    transform: translateX(600px);
-  }
-  to {
-    transform: translateX(-100px);
-  }
-}*/
 
 .skills li:nth-child(1) { animation-delay: 0ms; }
 .skills li:nth-child(2) { animation-delay: 1s; }
@@ -302,6 +290,14 @@ i .dark-mode {
 .skills li:nth-child(5) { animation-delay: 4s; }
 .skills li:nth-child(6) { animation-delay: 5s; }
 .skills li:nth-child(7) { animation-delay: 6s; }
+
+/*.skills li:nth-child(1) { transform: translateX(0px); }
+.skills li:nth-child(2) { transform: translateX(100px); }
+.skills li:nth-child(3) { transform: translateX(200px); }
+.skills li:nth-child(4) { transform: translateX(300px); }
+.skills li:nth-child(5) { transform: translateX(400px); }
+.skills li:nth-child(6) { transform: translateX(500px); }
+.skills li:nth-child(7) { transform: translateX(600px); }*/
 
 @keyframes scroll {
   from {

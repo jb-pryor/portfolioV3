@@ -82,11 +82,11 @@ function SideBar() {
           <div className='skills-container'>     
             <ul className='skills'>
               <li>Java<i className='fab fa-java'></i></li>
-              <li>• JavaScript<i className='fab fa-js'></i></li>
-              <li>• Python<i className='fab fa-python'></i></li>
-              <li>• C++<i className='fab fa-house'></i></li>
-              <li>• C#<i className='fab fa-house'></i></li>
-              <li>• SQL<i className='fab fa-sql'></i></li>
+              <li>JavaScript<i className='fab fa-js'></i></li>
+              <li>Python<i className='fab fa-python'></i></li>
+              <li>C++<i className='fab fa-house'></i></li>
+              <li>C#<i className='fab fa-house'></i></li>
+              <li>SQL<i className='fab fa-sql'></i></li>
             </ul>  
             <ul className='skills'>
               <li>React<i className='fab fa-react'></i></li>

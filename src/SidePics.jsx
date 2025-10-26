@@ -29,7 +29,7 @@ function SidePics() {
         className="img1"
         initial={{ x: "-100%", opacity: 0 }}
         animate={leftControls}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.9 }}
       />
       <motion.img
         ref={rightRef}
@@ -38,7 +38,7 @@ function SidePics() {
         className="img2"
         initial={{ x: "100%", opacity: 0 }}
         animate={rightControls}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.9 }}
       />
     </div>
   );

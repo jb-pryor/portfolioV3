@@ -82,20 +82,19 @@ function SideBar() {
           <div className='skills-container'>     
             <ul className='skills'>
               <li>Java<i className='fab fa-java'></i></li>
-              <li>JavaScript<i className='fab fa-js'></i></li>
-              <li>Python<i className='fab fa-python'></i></li>
+              <li>JavaScript  <i className='fab fa-js'></i></li>
+              <li>  Python<i className='fab fa-python'></i></li>
               <li>C++<i className='fab fa-house'></i></li>
               <li>C#<i className='fab fa-house'></i></li>
               <li>SQL<i className='fab fa-sql'></i></li>
             </ul>  
             <ul className='skills'>
               <li>React<i className='fab fa-react'></i></li>
-              <li>• Figma<i className='fab fa-figma'></i></li>
-              <li>• AWS<i className='fab fa-aws'></i></li>
-              <li>• Spring Boot<i className='fab fa-house'></i></li>
-              <li>• Node.js<i className='fab fa-node'></i></li>
-              <li>• Unity<i className='fab fa-unity'></i></li>
-              <li>• Github<i className='fab fa-github'></i></li>
+              <li>Tailwind<i className='fab fa-tailwind'></i></li>
+              <li>AWS<i className='fab fa-aws'></i></li>
+              <li>Spring Boot<i className='fab fa-house'></i></li>
+              <li>Node.js<i className='fab fa-node'></i></li>
+              <li>Unity<i className='fab fa-unity'></i></li>
             </ul>  
           </div>
         </div>

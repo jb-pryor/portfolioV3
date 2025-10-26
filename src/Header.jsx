@@ -6,16 +6,23 @@ function Header() {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-
   const controlHeader = () => {
-    if (window.scrollY > lastScrollY) {
+
+    const currentScrollY = window.scrollY;
+
+    if(currentScrollY < 30) {
+      setShowHeader(true);
+    }
+    else if (window.scrollY > lastScrollY) {
       // Scrolling down → hide
       setShowHeader(false);
     } else {
       // Scrolling up → show
       setShowHeader(true);
     }
-    lastScrollY.current = window.scrollY;
+    //lastScrollY = window.scrollY;
+    setLastScrollY(currentScrollY);
+    console.log(currentScrollY);
   };
 
   useEffect(() => {
@@ -23,7 +30,7 @@ function Header() {
     return () => {
       window.removeEventListener("scroll", controlHeader);
     };
-  }, []);
+  }, [lastScrollY]);
 
   const handleScroll = (id) => {
     const element = document.getElementById(id);

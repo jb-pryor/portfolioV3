@@ -77,22 +77,22 @@ function SideBar() {
           <h2 className='secTitle'>About Me</h2>  
           <p>Junior Software Developer with a passion for building fullstack applications</p>
           <p>Born in Northern California currently a student living in San Diego, I have always been a very competitve person and have always pushed myself to be the best</p>
-          <p>Eager to dive even deeper into fullstack applications, ai, gameDev, web3 Dapps, and other aspects of the forever growing tech industry<u>...read more about me</u></p>
+          <p>Eager to dive even deeper into fullstack applications, ai, gameDev, web3 Dapps, and other aspects of the forever growing tech industry.</p>
           <h3 className='secTitle'>Skills</h3>
           <div className='skills-container'>     
             <ul className='skills'>
-              <li>Java<i className='fab fa-java'></i></li>
               <li>JavaScript  <i className='fab fa-js'></i></li>
-              <li>  Python<i className='fab fa-python'></i></li>
-              <li>C++<i className='fab fa-house'></i></li>
               <li>C#<i className='fab fa-house'></i></li>
+              <li>Python<i className='fab fa-python'></i></li>
+              <li>C++<i className='fab fa-house'></i></li>
+              <li>Java<i className='fab fa-java'></i></li>
               <li>SQL<i className='fab fa-sql'></i></li>
             </ul>  
             <ul className='skills'>
-              <li>React<i className='fab fa-react'></i></li>
-              <li>Tailwind<i className='fab fa-tailwind'></i></li>
-              <li>AWS<i className='fab fa-aws'></i></li>
               <li>Spring Boot<i className='fab fa-house'></i></li>
+              <li>AWS<i className='fab fa-aws'></i></li>
+              <li>Tailwind<i className='fab fa-tailwind'></i></li>
+              <li>React<i className='fab fa-react'></i></li>
               <li>Node.js<i className='fab fa-node'></i></li>
               <li>Unity<i className='fab fa-unity'></i></li>
             </ul>  

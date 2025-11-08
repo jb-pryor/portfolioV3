@@ -30,12 +30,12 @@ function AboutMeBtn() {
         <img src='/src/assets/7A6A1293.jpg' className='bigCircImg'/>
         <h3>James (JB) Pryor</h3>
         {/*<h4><i className='fa-solid fa-location-dot'></i>San Diego, CA</h4>*/}
-        <div className='icons'>
+        {/*<div className='icons'>
           <a href="https://github.com/jb-pryor" target="_blank" rel="noopener noreferrer"><i className='fab fa-github'></i>GitHub</a>
           <a href='https://www.linkedin.com/in/james-pryor-571b3a2ab/' target='_blank' rel="noopener noreferrer" id='github-text'><i className='fab fa-linkedin'></i>LinkedIn</a>
           <a className='resume' href="/RoughResume.pdf" target="_blank" rel="noopener noreferrer"><i className='fab fa-download'></i>Resume</a>
-          {/*<a href='https://instagram.com/jb_pryor_' target='_blank' rel="noopener noreferrer"><i className='fab fa-instagram'></i></a>*/}
-        </div>
+          {/*<a href='https://instagram.com/jb_pryor_' target='_blank' rel="noopener noreferrer"><i className='fab fa-instagram'></i></a>
+        </div>*/}
         
       </div>
 

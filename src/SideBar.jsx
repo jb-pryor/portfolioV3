@@ -9,15 +9,22 @@ function SideBar() {
 
     <>
       <div className="box">
-        <div className='sec1'>
+        <div className='sec sec1'>
           <div className='borderDiv' id='home'></div>
-          <div className='circFlipImg'></div>
+          {/*<div className='circFlipImg'></div>*/}
           <h2 className='nameText'>I'm James Pryor or JB <span className='emoji-wave'>👋</span></h2>
           <div className='locateText'><h2><i className='fa-solid fa-location-dot'></i>San Diego, CA</h2></div>
-          <h3 className='fullStack'>I'm a fullstack-developer.</h3>
-          <div className='borderDiv' id='projects'></div>
+          <h2 className='fullStack'>I am a <span className='colorText'>Software Engineer</span></h2>
         </div>
-        <div className='sec2'>
+        <div className='borderDiv' id='about'></div>
+        <div className='sec sec3'>
+          <h2 className='secTitle'>About Me</h2>  
+          <p>Software engineer that enjoys building fullstack applications in my freetime.</p>
+          <p>Born in Northern California currently a student living in San Diego, I have always been a very competitve person and have always pushed myself to be the best</p>
+          <p>Eager to dive even deeper into fullstack applications, ai, gameDev, web3 Dapps, and other aspects of the forever growing tech industry. My ability to learn quickly and easily adapt under any situations. </p>
+        </div>
+        <div className='borderDiv' id='projects'></div>
+        <div className='sec sec2'>
           <h2 className='secTitle'>A few things I've made:</h2>
             <div className='proj'>
               <div className='rowL'>
@@ -55,14 +62,14 @@ function SideBar() {
             </div>
             <div className='proj'>
               <div className='rowL'>
-                <p className='title'>Stock Tracker</p>
-                <p className='projInfo'>Created a dashboard that allows user to input a stock's ticker and retrieves the stock's price, market cap, market index, industry, analyst rating...</p>
+                <p className='title'>GameTitle</p>
+                <p className='projInfo'>Created a topdown level progression zombie game inspired by one of my favorite mobile games when I was a kid.</p>
                 <div>
                   <ul className='tools'>
                     <li>Skills/Tools used: </li>
-                    <li>React •</li>
-                    <li>Javascript •</li>
-                    <li>Tailwind </li>
+                    <li>Unity •</li>
+                    <li>C# •</li>
+                    <li>Krita</li>
                   </ul>
                 </div>
               </div>
@@ -71,13 +78,7 @@ function SideBar() {
               </div>
             </div>
         </div>
-        <div className='spacing'></div>
-        <div className='borderDiv' id='about'></div>
-        <div className='sec3'>
-          <h2 className='secTitle'>About Me</h2>  
-          <p>Junior Software Developer with a passion for building fullstack applications</p>
-          <p>Born in Northern California currently a student living in San Diego, I have always been a very competitve person and have always pushed myself to be the best</p>
-          <p>Eager to dive even deeper into fullstack applications, ai, gameDev, web3 Dapps, and other aspects of the forever growing tech industry.</p>
+        <div className='sec sec5'>
           <h3 className='secTitle'>Skills</h3>
           <div className='skills-container'>     
             <ul className='skills'>
@@ -99,7 +100,7 @@ function SideBar() {
           </div>
         </div>
         <div className='borderDiv' id='contact'></div>
-        <div className='sec4'>
+        <div className='sec sec4'>
           <form action="" className="contact-left">
             <h2 className='secTitle'>Contact Me</h2>
             <div className='contactTitle'>
@@ -113,8 +114,7 @@ function SideBar() {
           </form>
           <div className="contact-right"></div>
         </div>
-        <hr className='spacingBetween'/>
-        <div className='trademark'>© 2025 James Pryor. All rights reserved.</div>
+        {/*<div className='trademark'>© 2025 James Pryor. All rights reserved.</div>*/}
       </div>
     
     </>

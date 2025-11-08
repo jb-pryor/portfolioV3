@@ -7,6 +7,7 @@ import AboutMeBtn from './AboutMeBtn.jsx'
 import Header from './Header.jsx'
 import Lightmode from './Lightmode.jsx'
 import SidePics from './SidePics.jsx'
+import LinkBox from './LinkBox.jsx'
 
 
 function App() {
@@ -18,8 +19,8 @@ function App() {
       <Lightmode></Lightmode>
       <AboutMeBtn></AboutMeBtn>
       <SideBar></SideBar>
-     {/*} <SidePics></SidePics>*/}
-      <div className='emptySpace'></div>
+      {/*<SidePics></SidePics>*/}
+      <LinkBox></LinkBox>
     </>
   )
 }
